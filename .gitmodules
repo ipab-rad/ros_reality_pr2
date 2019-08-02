@@ -1,0 +1,3 @@
+[submodule "ros_reality_bridge"]
+	path = ros_reality_bridge
+	url = https://github.com/ipab-rad/ros_reality_bridge.git
