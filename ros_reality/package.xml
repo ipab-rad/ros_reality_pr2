@@ -10,6 +10,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <depend>rospy</depend>
+  <depend>ros_reality_bridge</depend>
 
 
 </package>

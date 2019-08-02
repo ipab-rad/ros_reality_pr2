@@ -5,4 +5,5 @@ find_package(catkin REQUIRED COMPONENTS
 		rospy)
 
 catkin_package(CATKIN_DEPENDS
-		rospy)
+		rospy
+		ros_reality_bridge)
