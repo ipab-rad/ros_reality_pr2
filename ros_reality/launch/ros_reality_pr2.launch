@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<!-- Arguments -->
+	<arg name="unity_path" default="unity3d"/> 
+  	<arg name="ros_reality_path" default="$(find ros_reality_pr2)"/> 
+	<arg name="ros_bridge_port" default="8080"/>
+
+
+	<!-- rosbridge_server and ros_reality_bridge -->
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" > 
+		<arg name="port" value="$(arg ros_bridge_port)"/>
+	</include>
+	<node name="ros_reality_node" pkg="ros_reality_bridge" type="unityNode.py"/>
+	
+	<!-- Unity3D -->
+	<node name="unity3d" pkg="ros_reality_pr2" type="launch_unity3d.py" args="$(arg ros_reality_path) $(arg ros_reality_path)">
+		<param name="unity_path" value="$(arg unity_path)"/>
+		<param name="ros_reality_path" value="$(arg ros_reality_path)"/>
+	</node>
+
+
+</launch>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_reality_pr2</name>
+  <version>0.0.0</version>
+  <description>A meta package used to launch the ros_reality package for the PR2</description>
+
+  <maintainer email="vivek.r.raja@gmail.com">Vivek Raja</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>rospy</depend>
+
+
+</package>

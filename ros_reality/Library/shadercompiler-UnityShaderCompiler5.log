@@ -1,0 +1,4 @@
+Base path: /opt/Unity3D/Editor/Data
+Cmd: initializeCompiler
+Cmd: disassembleShader
+  api=5 insize=0 outsize=57 ok=1
