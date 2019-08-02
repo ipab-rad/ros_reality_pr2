@@ -16,7 +16,8 @@ Hi! Welcome to ROS Reality, a package made by the [Humans to Robots Lab](http://
 
 ## Installation
 1. Download and install Unity 2017.4. ([Linux download link](https://beta.unity3d.com/download/fbeab28dc46b/public_download.html) and [instructions](https://askubuntu.com/a/1078159))
-2. Clone this repo with `git clone --recursive https://github.com/ipab-rad/ros_reality_pr2.git` in your catkin workspace. Build it, and source.
+2. Install rosbridge with `apt-get sudo apt-get install ros-<rosdistro>-rosbridge-suite`
+3. Clone this repo with `git clone --recursive https://github.com/ipab-rad/ros_reality_pr2.git` in your catkin workspace. Build it, and source.
 
 ## Scenes
 There are 2 scenes (Position Control and Trajectory Control); however, we only activley use Position Control. Position Control visualises the PR2 and an image plane from the kinect that moves with the tilt of the PR2's head. Code in `ros_reality/Assets/Scripts` can also be modified to include the kinect's point cloud in the scene.
